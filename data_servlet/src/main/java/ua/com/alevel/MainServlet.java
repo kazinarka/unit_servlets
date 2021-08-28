@@ -34,9 +34,9 @@ public class MainServlet extends HttpServlet {
 
         for (Map.Entry<String, String> entry : userInfo.entrySet()) {
             if (entry.getKey().equals(remoteHost)) {
-                writer.println("<p align=center> <b>" + entry.getKey() + " " + entry.getValue() + "</b> </p>");
+                writer.println("<p align=center> <b>" + entry.getKey() + " :: " + entry.getValue() + "</b> </p>");
             } else {
-                writer.println("<p align=center>" + entry.getKey() + " " + entry.getValue() + "</p>");
+                writer.println("<p align=center>" + entry.getKey() + " :: " + entry.getValue() + "</p>");
             }
         }
     }
